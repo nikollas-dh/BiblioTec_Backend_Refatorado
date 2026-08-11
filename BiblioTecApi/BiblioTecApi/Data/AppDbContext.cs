@@ -11,7 +11,9 @@ namespace BiblioTecApi.Data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Livro> Livros{ get; set; }
         public DbSet<Curso> Cursos{ get; set; }
-
+        public DbSet<Favoritos> Favoritos { get; set; }
+        public DbSet<Avaliacoes> Avaliacoes { get; set; }
+        public DbSet<Reservas> Reservas { get; set; }
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {
             configurationBuilder
