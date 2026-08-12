@@ -21,10 +21,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restaurar dependências
-        run: dotnet restore
+        run: dotnet restore BiblioTecApi.Tests/BiblioTecApi.Tests.csproj
 
       - name: Compilar projeto
-        run: dotnet build --no-restore
+        run: dotnet build BiblioTecApi.Tests/BiblioTecApi.Tests.csproj --no-restore
 
       - name: Executar testes
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test BiblioTecApi.Tests/BiblioTecApi.Tests.csproj --no-build --verbosity normal
